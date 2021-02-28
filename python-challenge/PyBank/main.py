@@ -2,7 +2,7 @@ import csv
 import os
 
 #path to collect data
-budget_path = os.path.join(PyBank/Resources/budget_data.csv")
+budget_path = os.path.join("PyBank/Resources/budget_data.csv")
 budget_path_output = ("PyBank//Resources/budget_data.txt")
 
 # Variables to Track
