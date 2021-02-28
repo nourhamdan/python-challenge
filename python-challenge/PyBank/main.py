@@ -1,8 +1,8 @@
 import csv
 import os
 
-#path to collect data
-budget_path = os.path.join("PyBank/Resources/budget_data.csv")
+# path to collect data
+budget_path = os.path.join(PyBank/Resources/budget_data.csv")
 budget_path_output = ("PyBank//Resources/budget_data.txt")
 
 # Variables to Track
@@ -36,7 +36,7 @@ with open(budget_path) as csvfile:
         prev_profit_loss = int(row["Profit/Losses"])
         print(prev_profit_loss)
 
-        # Determine the greatest increase
+        # Find the results of  the greatest increase
         if (profit_loss_change > greatest_increase[1]):
             greatest_increase[1] = profit_loss_change
             greatest_increase[0] = row["Date"]
@@ -62,7 +62,7 @@ with open(budget_path) as csvfile:
     
 
 
-# Output Files
+# Output txt Files
 with open(budget_path_output, "w") as txt_file:
     txt_file.write("Total Months: " + str(total_months))
     txt_file.write("\n")
